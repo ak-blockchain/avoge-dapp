@@ -1,0 +1,137 @@
+<head>
+    <title>Avoge</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="icon" type="image/x-icon" href="assets/avoge_text.png">
+</head>
+
+<body>
+
+    <button id="walletCircle">
+        <img id="walletImage" src="assets/wallet_not_connected.png">
+    </button>
+    <div id="usersWallet">Not Connected</div>
+
+    <div id="menu">
+
+        <img id="mainLogo" src="assets/avoge_text.png">
+
+        <div id="menuOptions" style="display: block">
+
+            <button id="btn_menu" class="menuButton menuButton_selected">
+                <h3 class="menuText">Dashboard</h3>
+            </button>
+
+            <button id="btn_swap" class="menuButton menuButton_unselected">
+                <h3 class="menuText">New! NFT-Swap</h3>
+            </button>
+
+            <button id="btn_lock" class="menuButton menuButton_unselected">
+                <h3 class="menuText">New! NFT-Lock</h3>
+            </button>
+
+            <button id="btn_mint" class="menuButton menuButton_clickable" >
+                <h3 class="menuText">Mint Avoges</h3>
+                <img class="external" id="mint_avoges_ext" src="assets/external.png"></img>
+            </button>
+
+            <button id="btn_chart" class="menuButton menuButton_clickable" >
+                <h3 class="menuText">Live Chart</h3>
+                <img class="external" id="chart_ext" src="assets/external.png"></img>
+            </button>
+        </div>
+
+        <div id="pairAddressBlock">
+            <h6 class="pairAddress">AVOGE:&nbsp
+                <a id="pair" class="pairHref" href="https://bscscan.com/token/0x78618c5114Cf2B71A3fe0Af9d7c5aEb129E90487" target="_blank" rel="noopener noreferrer">
+                    0x7861...0487
+                </a>
+            </h6> 
+            <button class="copySquare"  id="copyToken">
+                <img src="assets/copy.png" class="copyImage" id="tokenClipoardb">
+                <img src="assets/tick_white.png" class="copyImageTick" id="tokenTick">
+            </button>
+
+            <h6 class="pairAddress">Pair:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a id="pair" class="pairHref" href="https://bscscan.com/address/0x30D85Bb8b68B3425F7f3433fc2b1596CA873da89" target="_blank" rel="noopener noreferrer">
+                    0x30D...da89
+                </a>
+            </h6>
+            <button class="copySquare"  id="copyPair">
+                <img src="assets/copy.png" class="copyImage" id="pairClipboard">
+                <img src="assets/tick_white.png" class="copyImageTick" id="pairTick">
+            </button>
+            
+        </div>
+
+        <div id="cryptologosbar">
+            <a href="https://bscscan.com/address/0x78618c5114Cf2B71A3fe0Af9d7c5aEb129E90487" target="_blank" rel="noopener noreferrer" style="color: transparent">
+            <img class="cryptologo" src="assets/cryptologos/bscscan.png">
+            </a>
+
+            <a href="https://t.me/virusdaoen" target="_blank" rel="noopener noreferrer" style="color: transparent">
+                <img class="cryptologo" src="assets/cryptologos/telegram.png">
+            </a>
+
+            <a href="https://twitter.com/virusdaoapp" target="_blank" rel="noopener noreferrer" style="color: transparent">
+            <img class="cryptologo" src="assets/cryptologos/twitter.png">
+            </a>
+
+            <a href="https://coinmarketcap.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
+            <img class="cryptologo tbc" src="assets/cryptologos/cmc.png">
+            </a>
+
+            <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer" style="color: transparent">
+            <img class="cryptologo tbc" src="assets/cryptologos/coingecko.png">
+            </a>
+        </div>
+
+    </div>
+
+    <div id="homepage">
+
+    <h3 style="color: white; font-size: 1.5em; position: absolute; left: 340px; top: 250px; width: fit-content;">The First Doge and Primary Memecoin on Avalanche.</h3>
+
+    <div id="aboutblock">
+        Avoge is the first Doge-themed meme-token on the Avalanche C-chain. Avoge fosters a meme-loving community and bring greater Avalanche representation in the crypto meme space as a whole. Avoge points its initial focus on the $AVOGE token traded on traderJoeXYZ, and the Avoges NFT collection, as well as its cross-platform community led by notable figures in the space.
+    </div>
+
+    <div id="aboutblock2" >
+        Avoge is the first Doge-themed meme-token on the Avalanche C-chain. Avoge fosters a meme-loving community and bring greater Avalanche representation in the crypto meme space as a whole. Avoge points its initial focus on the $AVOGE token traded on traderJoeXYZ, and the Avoges NFT collection, as well as its cross-platform community led by notable figures in the space.
+    </div>
+
+    <img src="assets/avogeOnly.png" style="width: 250px; position: absolute; left: 270px; top: 290px;"/>
+    <img src="assets/91_tra.png" style="width: 200px; position: absolute; right: 30px; top: 460px;"/>
+
+    <div class="simpleStatBlock" id="tokenomicBlock">
+        <h3 style="font-size: 1.1em">8% buy and sell taxes | 4%/4% liquidity/marketing | 0% transfer tax</h3>
+    </div>
+
+    <div id="statsDiv">
+
+        <div class="simpleStatBlock" id="block_mc">
+            <h2 class="simpleStatLabel">Market Cap</h2>
+            <h2 class="simpleStat" id="simpleStat">$0</h2>
+        </div>
+
+        <div class="simpleStatBlock" id="block_price">
+            <h2 class="simpleStatLabel">Price</h2>
+            <h2 class="simpleStat" id="simpleStat">$0.00</h2>
+        </div>
+
+        <div class="simpleStatBlock" id="block_avoges">
+            <h2 class="simpleStatLabel">Avoges Minted</h2>
+            <h2 class="simpleStat" id="simpleStat">0</h2>
+        </div>
+
+    </div>
+
+    <!-- NEW BLOCK -->
+    <div id="staking" style="display: none;">
+
+    </div>
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="genericDapp.js"></script>
+</body>
