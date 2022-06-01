@@ -1,19 +1,14 @@
 :root {
-    --pageBg: #CF4848;
-    --mainColor:  #ffbb1e;
+    --pageBg: #424242;
+    --mainColor:  #F8D448;
     --mainColorFaded: #ffb545ba; 
     --menuColor: #ffffff15;
     --faded: rgba(255, 255, 255, 0.349);
 }
 
-@font-face {
-    font-family: pixellated;
-    src: url(assets/PixelEmulator-xq08.ttf);
-  }
-
 body {
     background-color: var(--pageBg);
-    font-family: pixellated; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 /*
@@ -24,7 +19,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     top: 20px;
-    width: 120px;
+    width: 140px;
 }
 
 #walletCircle {
@@ -45,7 +40,7 @@ body {
 #walletImage {
     width: 50px;
     position: absolute;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%);
     top: 0px;
 }
@@ -89,7 +84,7 @@ body {
     display: block;
     margin-top: 15px;
     text-align: left;
-    font-family: pixellated;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -137,8 +132,12 @@ body {
     left: 200px; 
 }
 #chart_ext {
-    top: 213px; 
-    left: 183px; 
+    top: 80px; 
+    left: 150px; 
+}
+#web_ext {
+    top: 124px; 
+    left: 130px; 
 }
 
 
@@ -156,7 +155,7 @@ body {
 .simpleStatLabel {
     color: white;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     font-size: larger;
 }
 
@@ -164,23 +163,25 @@ body {
     color: var(--mainColor);
     margin-top: -10px;
     text-align: center;
+    font-size: x-large;
 }
 
 #block_mc {
     position: absolute;
-    left: 0px; 
+    left: calc(10% - 180px); 
     top: 0px;
 }
 
 #block_price {
     position: absolute;
-    left: 30%;
+    left: calc(50% - 100px);
+    transform: translateX(-50%);
     top: 0px;
 }
 
 #block_avoges {
     position: absolute;
-    left: 60%;
+    right: 10%;
     top: 0px;
 }
 
@@ -274,7 +275,7 @@ body {
 #pairAddressBlock {
     position: absolute;
     bottom: 100px;
-    left: 30px;
+    left: 20px;
     line-height: 0px;
 }
 
@@ -298,7 +299,7 @@ body {
     position: absolute;
     align-items: center;
     text-align: center;
-    left: 170px;
+    left: 194px;
     background-color: transparent;
 }
 .copySquare:hover {
