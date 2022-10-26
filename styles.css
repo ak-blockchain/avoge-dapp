@@ -11,6 +11,16 @@ body {
     font-family: Arial, Helvetica, sans-serif; 
 }
 
+#spaceForAd {
+    position: absolute;
+    left: 330px;
+    top: 10px;
+    background-color: #ffffff15;
+    color: #383838;
+    width: calc(100% - 600px);
+    height: 90px;
+}
+
 /*
     Top Bar
 */
