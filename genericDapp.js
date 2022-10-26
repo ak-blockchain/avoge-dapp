@@ -46,11 +46,11 @@ function copyPair() {
 
 function goToChart() {
 	window.open(
-		"https://dexscreener.com/bsc/0x1EBB75BbA8C0E9c8D36744Ab77b2c7b877b47Cfa", "_blank");
+		"https://dexscreener.com/ethereum/0xa1c49baf59e77a74e1fb5193f320fbf498daeb2d", "_blank");
 }
 function goToWebsite() {
     window.open(
-		"https://memenunity.com/#", "_blank");
+		"https://houerc20.com/#", "_blank");
 }
 
 
